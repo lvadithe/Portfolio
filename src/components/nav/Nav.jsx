@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { AiOutlineHome } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'
 import { AiOutlineBook } from 'react-icons/ai'
+import { AiOutlineProject } from 'react-icons/ai'
 import { RiServiceLine } from 'react-icons/ri'
 import { BiMessageSquareDetail } from 'react-icons/bi'
 import './nav.css'
@@ -33,6 +34,12 @@ export default function Nav() {
         className={state === '#experience' ? 'active' : ''}
       >
         <AiOutlineBook />
+      </a>
+      <a
+        href='#portfolio'
+        onClick={() => setState('#portfolio')}
+        className={state === '#portfolio' ? 'active' : ''}>
+        <AiOutlineProject />
       </a>
       <a
         href='#testimonials'
