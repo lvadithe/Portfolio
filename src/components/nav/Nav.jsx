@@ -35,10 +35,9 @@ export default function Nav() {
         <AiOutlineBook />
       </a>
       <a
-        href='#services'
-        onClick={() => setState('#services')}
-        className={state === '#services' ? 'active' : ''}
-      >
+        href='#testimonials'
+        onClick={() => setState('#testimonials')}
+        className={state === '#testimonials' ? 'active' : ''}>
         <RiServiceLine />
       </a>
       <a
